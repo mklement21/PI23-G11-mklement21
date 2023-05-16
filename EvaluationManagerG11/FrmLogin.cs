@@ -19,7 +19,9 @@ namespace EvaluationManagerG11 {
         }
 
         private void button1_Click(object sender, EventArgs e) {
-
+            if (txtUsername.Text == "") {
+                MessageBox.Show("Korisničko ime nije uneseno!", "Problem", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
